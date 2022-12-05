@@ -21,6 +21,29 @@ print("You can go FORWARD to the other side of the entrance hall.")
 print("There is also a door to your LEFT.")
 print("You can see a glass-paned door to the RIGHT. Through it, a garden of some sort is visible.")
 
+def second_bedroom():
+    print("\n")
+    print("You find a letter where the killer is revealed!")
+    answer_letter = input("\U0001F914 Would you give it to the police? (Y or N):\n")
+    if answer_letter == "Y":
+        print("\n")
+        you_win = pyfiglet.figlet_format("YOU WIN")
+        print(you_win)
+        print("\U0001F603 Good job! Police is going to arrest the killer")
+    elif answer_letter == "N":
+        print("\n")
+        game_over = pyfiglet.figlet_format("GAME OVER")
+        print(game_over)
+        print("\U0001F61E Unfortunetely Polsice will never know who the killer is.")
+
+
+def staircase():
+    print("\n")
+    print("You go up the stairs. You decide to check you uncles bedroom.")
+    print("You find the bed made. \U0001F914 Looks like he didn't get to his bedroom the day he died.")
+    print("You decide to check the second bedroom.")
+    second_bedroom()
+
 def closet_hall():
     print("\n")
     print("You open the closet and you find a woman hat.")

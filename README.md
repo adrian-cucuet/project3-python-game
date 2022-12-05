@@ -1,31 +1,61 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Python Insurance Calculator.
 
-Welcome adrian-cucuet,
+![Opening message](/images/application-start-up.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Welcome to the Insurance Calculator application. This application is built using only Python.
+It is designed to provide the user with a realistic insurance quote depending on what details
+the user enters. 
 
-## Reminders
+There is three vehicle categories which are cars, vans and motorbikes.
+With each category starting with a seperate base price.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+Live link to the application can be found here: [Python Insurance Calculator](https://python-insurance-calculator.herokuapp.com/)
 
-## Creating the Heroku app
+Link to repository on GitHub can be found [here](https://github.com/Dean85e/portfolio-project-3)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Design
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* The game is an adventure game, where the user is answering quations in order to find solution.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Testing
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Validator Testing
 
-Connect your GitHub repository and deploy as normal.
+* Project code passed through the CI Python Linter with no issues. The only issues were related to longer code, but that has to do with the emoji codes.
 
-## Constraints
+![CI Python Linter](/Images/CI-linter.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Unfixed Bugs
 
------
-Happy coding!
+* No unfixed Bugs.
+
+## Deployment
+
+The project was deployed using Heroku. The steps to deploy are as follows:
+
+  1. Go to Heroku
+  2. Go to 'New' and select 'Create a new app'
+  3. Input your app name and create app.
+  4. Navigate to 'Settings'
+  5. Install the needed buildpacks. Select Python and install and then node.js and 
+     install and then click save. They must be in this order.
+  6. Navigate to the 'Deploy' section.
+  7. Connect to GitHub, search for your repo and confirm.
+  8. Choose branch to deploy.
+  9. Your app should now be available to see. You can choose whether to have your app 
+     automatically redeploy with every push or to keep it manual.
+
+
+## Languages used 
+
+ * Python
+
+## Technologies used
+
+ * Github 
+
+ * Gitpod
+
+ * Heroku
+
+ * Code Institute template

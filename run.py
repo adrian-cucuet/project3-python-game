@@ -20,3 +20,39 @@ print("The gothic architecture lends a creepy feel to the entrance hall. Candles
 print("You can go FORWARD to the other side of the entrance hall.")
 print("There is also a door to your LEFT.")
 print("You can see a glass-paned door to the RIGHT. Through it, a garden of some sort is visible.")
+
+def forward():
+    print("\n")
+    print("You reached the end of the entrance hall.")
+    print("There is a STAIRCASE here.\nYou can also go to CLOSET under the stairs.")
+    answer_forward = input("\U0001F914 You want to go up the STAIRCASE or check the CLOSET:\n")
+    if answer_forward == "staircase":
+        staircase()
+    elif answer_forward == "closet":
+        closet_hall()
+    else:
+        print("You have to choose 'staircase' or 'closet'")
+        forward()
+
+def intro():
+    print("\n")
+    answer_intro = input("\U0001F914 Where do you want to go? forward/left/right:\n")
+    if answer_intro == "forward":
+        forward()
+    elif answer_intro == "left":
+        print("\n")
+        print("You enter in your late uncle's office and see on his desk a letter.")
+        print("You pick up the letter an read it \U0001F9D0")
+        print("You find out he had a meeting with the University dean two days ago.")
+        print("You call the dean but he said your uncle never made it to ther meeting \U0001F615")
+        intro()
+    elif answer_intro == "right":
+        print("\n")
+        print("You have a walk in the garden and realize the flower beds are dry.")
+        print("That is a clue your uncle didn't take care of the garden lately.")
+        print("You are back in the house")
+        intro()
+    else:
+        intro()
+
+intro()

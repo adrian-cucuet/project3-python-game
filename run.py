@@ -1,7 +1,7 @@
 import pyfiglet
 import emoji
 
-""" 
+"""
 Printing the Game Name
 """
 game_name = pyfiglet.figlet_format("THE MANSION")
@@ -10,16 +10,18 @@ print(game_name)
 player_name = input('Enter your name:\n')
 print(f"Hello, {player_name} \U0001F603")
 print("This game is a quest where you choose how the game ends.")
-print("You will need to answer questions and take decissions,\nin order to move through the game.")
-print("It's 3:30 AM. The phone's ringing. Who could it be at this time of night?")
-print("You answer. A voice at the other end says that it's the police. Your uncle, a noted scientist, has been found dead.")
+print("You will need to answer questions and take decissions.")
+print("It's 3:30 AM. The phone's ringing. Who could it be?")
+print("You answer. A voice at the other end says that it's the police.")
+print("Your uncle, a noted scientist, has been found dead.")
 print("Time to investigate the house for any clues to his death...")
 print(f"Good luck \U0001F929 {player_name}!\n")
 print("You are standing at entrance of the mansion.")
-print("The gothic architecture lends a creepy feel to the entrance hall. Candles light the room.")
+print("The gothic architecture lends a creepy feel to the entrance hall.")
 print("You can go FORWARD to the other side of the entrance hall.")
 print("There is also a door to your LEFT.")
-print("You can see a glass-paned door to the RIGHT. Through it, a garden of some sort is visible.")
+print("You can see a glass-paned door to the RIGHT.")
+
 
 def second_bedroom():
     print("\n")
@@ -44,6 +46,7 @@ def staircase():
     print("You decide to check the second bedroom.")
     second_bedroom()
 
+
 def closet_hall():
     print("\n")
     print("You open the closet and you find a woman hat.")
@@ -62,6 +65,7 @@ def closet_hall():
         print("You need to choose 'inform' or 'confrunt'")
         closet_hall()
 
+
 def forward():
     print("\n")
     print("You reached the end of the entrance hall.")
@@ -74,6 +78,7 @@ def forward():
     else:
         print("You have to choose 'staircase' or 'closet'")
         forward()
+
 
 def intro():
     print("\n")
@@ -95,5 +100,6 @@ def intro():
         intro()
     else:
         intro()
+
 
 intro()

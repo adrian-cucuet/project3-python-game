@@ -21,6 +21,24 @@ print("You can go FORWARD to the other side of the entrance hall.")
 print("There is also a door to your LEFT.")
 print("You can see a glass-paned door to the RIGHT. Through it, a garden of some sort is visible.")
 
+def closet_hall():
+    print("\n")
+    print("You open the closet and you find a woman hat.")
+    print("You realize the hat belongs to a collegue of your uncle.")
+    answer_hat = input("\U0001F914 Would you INFORM the police about it or CONFRUNT the lady yourself?:\n")
+    if answer_hat == "inform":
+        print("\n")
+        print("\U0001F603 Good job! Police is gonna question the lady about her hat.")
+        staircase()
+    elif answer_hat == "confrunt":
+        print("\n")
+        print("Because it's too late at night, you have to wait untill tomorrow.")
+        print("\U0001F61E Now it's too late to use the hat as evidence.")
+        staircase()
+    else:
+        print("You need to choose 'inform' or 'confrunt'")
+        closet_hall()
+
 def forward():
     print("\n")
     print("You reached the end of the entrance hall.")
